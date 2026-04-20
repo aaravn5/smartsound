@@ -10,7 +10,7 @@ export const Route = createFileRoute("/founders")({
       {
         name: "description",
         content:
-          "Meet the team behind SmartSound: Aarav Naveen, Rishi Datanwala, Dane Bromfield, and Alan Jessil — building personalized neural audio for focus, sleep, and calm.",
+          "Meet the team behind SmartSound: Aarav Naveen (founder), Rishi Datanwala, Dane Bromfield, and Allan Jessil — building personalized neural audio for focus, sleep, and calm.",
       },
       { property: "og:title", content: "Meet the Founders — SmartSound" },
       {
