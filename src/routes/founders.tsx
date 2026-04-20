@@ -28,36 +28,54 @@ type Founder = {
   role: string;
   initials: string;
   bio: string;
+  contributions: string[];
   accent: "blue" | "purple" | "teal" | "amber";
 };
 
 const founders: Founder[] = [
   {
     name: "Aarav Naveen",
-    role: "Co-founder & CEO",
+    role: "Founder & CEO",
     initials: "AN",
-    bio: "Leads product vision and the neuroscience-backed engine behind SmartSound's adaptive frequency profiles.",
+    bio: "Came up with SmartSound in November 2025 and built it end-to-end — from the neuroscience research and adaptive audio engine to the app, the website, and the product roadmap.",
+    contributions: [
+      "Founded SmartSound (Nov 2025)",
+      "App & website engineering",
+      "Research & product development",
+      "Social media marketing",
+    ],
     accent: "blue",
   },
   {
     name: "Rishi Datanwala",
-    role: "Co-founder & CTO",
+    role: "Co-founder & Engineering",
     initials: "RD",
-    bio: "Architects the real-time audio synthesis pipeline and the adaptive engine that tunes every session to your brain.",
+    bio: "Joined Aarav early to help build SmartSound. Contributes to the app and website codebase and supports the technical architecture behind the adaptive audio system.",
+    contributions: [
+      "App engineering",
+      "Website engineering",
+      "Technical collaboration",
+    ],
     accent: "purple",
   },
   {
     name: "Dane Bromfield",
-    role: "Co-founder & Head of Growth",
+    role: "Co-founder & Growth",
     initials: "DB",
-    bio: "Drives the social engine that powers 7,000+ user touchpoints and the @smartsoundco community.",
+    bio: "Runs the human side of SmartSound — leading user research surveys, coordinating the beta tester program, and driving in-person marketing efforts on the ground.",
+    contributions: [
+      "User research & surveys",
+      "Beta tester coordination",
+      "In-person marketing",
+    ],
     accent: "teal",
   },
   {
-    name: "Alan Jessil",
-    role: "Co-founder & Head of Design",
+    name: "Allan Jessil",
+    role: "Co-founder & Contributor",
     initials: "AJ",
-    bio: "Crafts the calm, science-first interface and the brand language that makes neural audio feel effortless.",
+    bio: "Joined the team through the founding program and contributes product tweaks and polish to the SmartSound experience.",
+    contributions: ["Product tweaks & refinements"],
     accent: "amber",
   },
 ];
