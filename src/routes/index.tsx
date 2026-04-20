@@ -212,7 +212,54 @@ function HomePage() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* SEE IT LIVE — real product screenshots */}
+      <section className="relative py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-brand-blue">
+              See it live
+            </p>
+            <h2 className="mt-3 font-serif text-4xl tracking-tight sm:text-5xl">
+              Already shipping. <span className="text-gradient-brand italic">In your browser.</span>
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              No download. No app store. Just open smartsound.live and start tuning.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-6 lg:grid-cols-2">
+            <div className="group relative overflow-hidden rounded-3xl border border-border/50 bg-gradient-card shadow-elegant transition-all hover:border-brand-blue/40 hover:shadow-glow">
+              <div className="p-6 pb-0">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-brand-blue">Task · NASA-TLX</p>
+                <h3 className="mt-2 font-serif text-2xl">Score your cognitive load</h3>
+              </div>
+              <img
+                src={appTask}
+                alt="SmartSound Task screen showing NASA-TLX cognitive load scoring"
+                width={1024}
+                height={768}
+                loading="lazy"
+                className="mt-4 w-full"
+              />
+            </div>
+            <div className="group relative overflow-hidden rounded-3xl border border-border/50 bg-gradient-card shadow-elegant transition-all hover:border-brand-purple/40 hover:shadow-glow">
+              <div className="p-6 pb-0">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-brand-purple">Audio · Neural Pacer</p>
+                <h3 className="mt-2 font-serif text-2xl">Pick your mode. Tune in.</h3>
+              </div>
+              <img
+                src={appAudio}
+                alt="SmartSound Audio screen with Focus / Relax / ADHD / Nap modes"
+                width={1024}
+                height={768}
+                loading="lazy"
+                className="mt-4 w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="relative py-24 sm:py-32">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-gradient-card p-10 text-center shadow-elegant sm:p-16">
