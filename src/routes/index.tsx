@@ -4,6 +4,8 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { Button } from "@/components/ui/button";
 import heroWave from "@/assets/hero-wave.jpg";
 import brainFreq from "@/assets/brain-frequency.jpg";
+import appAudio from "@/assets/app-audio.png";
+import appTask from "@/assets/app-task.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
