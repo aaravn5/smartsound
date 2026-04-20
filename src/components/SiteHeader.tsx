@@ -45,6 +45,13 @@ export function SiteHeader() {
             Profiles
           </a>
           <Link
+            to="/founders"
+            className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            activeProps={{ className: "text-foreground" }}
+          >
+            Founders
+          </Link>
+          <Link
             to="/investors"
             className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             activeProps={{ className: "text-foreground" }}
@@ -84,6 +91,9 @@ export function SiteHeader() {
             <a href="/#profiles" onClick={() => setOpen(false)} className="rounded-lg px-3 py-2 text-sm hover:bg-secondary">
               Profiles
             </a>
+            <Link to="/founders" onClick={() => setOpen(false)} className="rounded-lg px-3 py-2 text-sm hover:bg-secondary">
+              Founders
+            </Link>
             <Link to="/investors" onClick={() => setOpen(false)} className="rounded-lg px-3 py-2 text-sm hover:bg-secondary">
               Investors
             </Link>
