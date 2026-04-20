@@ -160,6 +160,17 @@ function FoundersPage() {
                 <p className="relative mt-6 text-base leading-relaxed text-muted-foreground">
                   {f.bio}
                 </p>
+
+                <ul className="relative mt-5 flex flex-wrap gap-2">
+                  {f.contributions.map((c) => (
+                    <li
+                      key={c}
+                      className="rounded-full border border-border/60 bg-secondary/40 px-3 py-1 text-xs text-muted-foreground backdrop-blur"
+                    >
+                      {c}
+                    </li>
+                  ))}
+                </ul>
               </article>
             ))}
           </div>
