@@ -150,7 +150,7 @@ function HomePage() {
             <div className="relative overflow-hidden rounded-3xl border border-border/40 bg-gradient-card p-2 shadow-elegant">
               <img
                 src={brainFreq}
-                alt="Glowing violet brain with neural frequency waves"
+                alt="Soft flowing sound waves in violet, blue and warm peach tones"
                 width={1024}
                 height={1024}
                 loading="lazy"
