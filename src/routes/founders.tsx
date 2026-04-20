@@ -42,6 +42,7 @@ const founders: Founder[] = [
       "Founded SmartSound (Nov 2025)",
       "App & website engineering",
       "Research & product development",
+      "Product roadmap & slide deck",
       "Social media marketing",
     ],
     accent: "blue",
@@ -54,7 +55,7 @@ const founders: Founder[] = [
     contributions: [
       "App engineering",
       "Website engineering",
-      "Technical collaboration",
+      "Product roadmap & slide deck",
     ],
     accent: "purple",
   },
@@ -67,6 +68,7 @@ const founders: Founder[] = [
       "User research & surveys",
       "Beta tester coordination",
       "In-person marketing",
+      "Product roadmap & slide deck",
     ],
     accent: "teal",
   },
@@ -74,8 +76,11 @@ const founders: Founder[] = [
     name: "Allan Jessil",
     role: "Co-founder & Contributor",
     initials: "AJ",
-    bio: "Joined the team through the founding program and contributes product tweaks and polish to the SmartSound experience.",
-    contributions: ["Product tweaks & refinements"],
+    bio: "Joined the team through the founding program and contributes product tweaks, polish, and meaningful input into the SmartSound roadmap and pitch materials.",
+    contributions: [
+      "Product tweaks & refinements",
+      "Product roadmap & slide deck",
+    ],
     accent: "amber",
   },
 ];
