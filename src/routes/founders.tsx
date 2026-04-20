@@ -10,7 +10,7 @@ export const Route = createFileRoute("/founders")({
       {
         name: "description",
         content:
-          "Meet the team behind SmartSound: Aarav Naveen, Rishi Datanwala, Dane Bromfield, and Alan Jessil — building personalized neural audio for focus, sleep, and calm.",
+          "Meet the team behind SmartSound: Aarav Naveen (founder), Rishi Datanwala, Dane Bromfield, and Allan Jessil — building personalized neural audio for focus, sleep, and calm.",
       },
       { property: "og:title", content: "Meet the Founders — SmartSound" },
       {
@@ -28,36 +28,54 @@ type Founder = {
   role: string;
   initials: string;
   bio: string;
+  contributions: string[];
   accent: "blue" | "purple" | "teal" | "amber";
 };
 
 const founders: Founder[] = [
   {
     name: "Aarav Naveen",
-    role: "Co-founder & CEO",
+    role: "Founder & CEO",
     initials: "AN",
-    bio: "Leads product vision and the neuroscience-backed engine behind SmartSound's adaptive frequency profiles.",
+    bio: "Came up with SmartSound in November 2025 and built it end-to-end — from the neuroscience research and adaptive audio engine to the app, the website, and the product roadmap.",
+    contributions: [
+      "Founded SmartSound (Nov 2025)",
+      "App & website engineering",
+      "Research & product development",
+      "Social media marketing",
+    ],
     accent: "blue",
   },
   {
     name: "Rishi Datanwala",
-    role: "Co-founder & CTO",
+    role: "Co-founder & Engineering",
     initials: "RD",
-    bio: "Architects the real-time audio synthesis pipeline and the adaptive engine that tunes every session to your brain.",
+    bio: "Joined Aarav early to help build SmartSound. Contributes to the app and website codebase and supports the technical architecture behind the adaptive audio system.",
+    contributions: [
+      "App engineering",
+      "Website engineering",
+      "Technical collaboration",
+    ],
     accent: "purple",
   },
   {
     name: "Dane Bromfield",
-    role: "Co-founder & Head of Growth",
+    role: "Co-founder & Growth",
     initials: "DB",
-    bio: "Drives the social engine that powers 7,000+ user touchpoints and the @smartsoundco community.",
+    bio: "Runs the human side of SmartSound — leading user research surveys, coordinating the beta tester program, and driving in-person marketing efforts on the ground.",
+    contributions: [
+      "User research & surveys",
+      "Beta tester coordination",
+      "In-person marketing",
+    ],
     accent: "teal",
   },
   {
-    name: "Alan Jessil",
-    role: "Co-founder & Head of Design",
+    name: "Allan Jessil",
+    role: "Co-founder & Contributor",
     initials: "AJ",
-    bio: "Crafts the calm, science-first interface and the brand language that makes neural audio feel effortless.",
+    bio: "Joined the team through the founding program and contributes product tweaks and polish to the SmartSound experience.",
+    contributions: ["Product tweaks & refinements"],
     accent: "amber",
   },
 ];
@@ -142,9 +160,89 @@ function FoundersPage() {
                 <p className="relative mt-6 text-base leading-relaxed text-muted-foreground">
                   {f.bio}
                 </p>
+
+                <ul className="relative mt-5 flex flex-wrap gap-2">
+                  {f.contributions.map((c) => (
+                    <li
+                      key={c}
+                      className="rounded-full border border-border/60 bg-secondary/40 px-3 py-1 text-xs text-muted-foreground backdrop-blur"
+                    >
+                      {c}
+                    </li>
+                  ))}
+                </ul>
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* OUR STORY */}
+      <section className="relative py-20 sm:py-24">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <span className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-secondary/40 px-4 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur">
+              <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+              Our story
+            </span>
+            <h2 className="mt-6 font-serif text-4xl tracking-tight sm:text-5xl">
+              How <span className="text-gradient-brand">SmartSound</span> started
+            </h2>
+          </div>
+
+          <ol className="relative mt-12 space-y-8 border-l border-border/50 pl-8">
+            <li className="relative animate-fade-up">
+              <span className="absolute -left-[37px] flex h-4 w-4 items-center justify-center rounded-full bg-gradient-primary ring-4 ring-background" />
+              <p className="font-mono text-xs uppercase tracking-wider text-primary">
+                November 2025
+              </p>
+              <h3 className="mt-1 font-serif text-2xl tracking-tight">
+                The idea
+              </h3>
+              <p className="mt-2 text-muted-foreground">
+                Aarav came up with SmartSound — a personalized neural audio
+                engine that adapts to the listener's brain — and started
+                building the first prototype, the research foundation, and the
+                product roadmap.
+              </p>
+            </li>
+
+            <li
+              className="relative animate-fade-up"
+              style={{ animationDelay: "0.1s" }}
+            >
+              <span className="absolute -left-[37px] flex h-4 w-4 items-center justify-center rounded-full bg-gradient-primary ring-4 ring-background" />
+              <p className="font-mono text-xs uppercase tracking-wider text-primary">
+                Shortly after
+              </p>
+              <h3 className="mt-1 font-serif text-2xl tracking-tight">
+                Rishi joins
+              </h3>
+              <p className="mt-2 text-muted-foreground">
+                Aarav brought on Rishi to help accelerate engineering across
+                the app and website.
+              </p>
+            </li>
+
+            <li
+              className="relative animate-fade-up"
+              style={{ animationDelay: "0.2s" }}
+            >
+              <span className="absolute -left-[37px] flex h-4 w-4 items-center justify-center rounded-full bg-gradient-primary ring-4 ring-background" />
+              <p className="font-mono text-xs uppercase tracking-wider text-primary">
+                The program
+              </p>
+              <h3 className="mt-1 font-serif text-2xl tracking-tight">
+                Dane and Allan come on board
+              </h3>
+              <p className="mt-2 text-muted-foreground">
+                Through a founder program, Dane joined to lead user research,
+                beta testing, and in-person marketing, and Allan came on to
+                contribute product tweaks. The four-person team has been
+                building SmartSound together since.
+              </p>
+            </li>
+          </ol>
         </div>
       </section>
 
